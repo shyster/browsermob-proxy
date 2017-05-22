@@ -1,12 +1,15 @@
 package net.lightbody.bmp.core.har;
 
 public final class HarNameValuePair {
-    private final String name;
-    private final String value;
+    private String name;
+    private String value;
 
     public HarNameValuePair(String name, String value) {
         this.name = name;
         this.value = value;
+    }
+
+    public HarNameValuePair() {
     }
 
     public String getName() {

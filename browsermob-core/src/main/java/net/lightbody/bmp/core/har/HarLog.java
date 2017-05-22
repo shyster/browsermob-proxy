@@ -1,11 +1,13 @@
 package net.lightbody.bmp.core.har;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class HarLog {
     private final String version = "1.2";
     private volatile HarNameVersion creator;

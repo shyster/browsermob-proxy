@@ -1,13 +1,16 @@
 package net.lightbody.bmp.core.har;
 
 public class HarNameVersion {
-    private final String name;
-    private final String version;
+    private String name;
+    private String version;
     private volatile String comment = "";
 
     public HarNameVersion(String name, String version) {
         this.name = name;
         this.version = version;
+    }
+
+    public HarNameVersion() {
     }
 
     public String getName() {
